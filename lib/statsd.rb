@@ -65,7 +65,7 @@ module Statsd
       rescue Exception => e # silent but deadly
         puts e.message
       ensure
-        sock.try(:close)
+        sock.close if sock != nil
       end
       true
     end
