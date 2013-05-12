@@ -1,7 +1,8 @@
 # -*- encoding: utf-8 -*-
 lib = File.expand_path('../lib/', __FILE__)
 $:.unshift lib unless $:.include?(lib)
-require File.expand_path("../lib/statsd/server", __FILE__) # for version info
+require File.expand_path("../lib/statsd/version", __FILE__) # for version info
+
 Gem::Specification.new do |s|
   s.name        = "statsd"
   s.version     = Statsd::Server::Version
