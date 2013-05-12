@@ -2,9 +2,7 @@ require 'eventmachine'
 require 'yaml'
 require 'erb'
 module Statsd
-  module Server #< EM::Connection  
-    Version = '0.5.4'  
-    
+  module Server #< EM::Connection      
     FLUSH_INTERVAL = 10
     COUNTERS = {}
     TIMERS = {}
